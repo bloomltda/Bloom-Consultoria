@@ -1,0 +1,165 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: #f2cb74;
+    color: #333;
+}
+
+   /* Centralizar a imagem */
+   .logo-container {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 75vh; /* Isso faz com que a imagem seja centralizada verticalmente */
+   }
+
+   /* Reduzir o tamanho da imagem */
+   #logo {
+       width: 50px; /* Ajuste o tamanho conforme necessário */
+       height: auto; /* Mantém a proporção da imagem */
+   }
+
+/* Cabeçalho */
+header {
+    background-color: #f2cb74; /* Azul índigo */
+    color: #000633; /* Dourado */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    color: #000633;
+    margin: 0;
+}
+
+/* Navegação */
+nav {
+    background-color: #b99504;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #000633;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Seções */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    background-color: #e6e8ea;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Tópicos e Abas */
+.tab-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tab-container button {
+    background-color: #000633;
+    color: #b99504;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-container button:hover {
+    background-color: #ddd;
+}
+
+.tab-content {
+    display: none;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #000633;
+}
+
+.tab-content h3 {
+    color: #b99504;
+}
+
+.tab-content p {
+    font-size: 1em;
+    color: #333;
+}
+
+.socios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px;
+    max-width: 1200px; /* Limite máximo para o contêiner */
+    width: 100%; /* Use 100% para ocupar toda a largura do pai */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+    padding: 0 20px; /* Adiciona um pouco de preenchimento nas laterais */
+}
+
+.socio {
+    flex: 1 1 calc(33.33% - 20px); /* Divide em três colunas com espaçamento */
+    max-width: 200px; /* Mantém o limite de largura */
+    text-align: center;
+}
+
+.socio-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.socio-descricao {
+    padding: 0.5em;
+}
+
+/* Rodapé */
+footer {
+    background-color: #b99504;
+    color: #000633;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
